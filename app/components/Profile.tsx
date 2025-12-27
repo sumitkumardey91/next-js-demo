@@ -8,7 +8,7 @@ function Profile() {
     async function t() {
         console.log(await getToken())
         console.log("cookies======> client", (await getCookieData()).oneCookie?.value)
-        await setCookieData(10000)
+        await setCookieData("10000")
 
     }
     useEffect(  () => {
